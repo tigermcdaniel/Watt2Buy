@@ -1,4 +1,6 @@
 This is the read me file
 
-Changed by Hung
+Changed by Hung Bui
 Changed by Kunal
+
+Reviewed by Vanessa

@@ -1,5 +1,6 @@
 "# WATT2Buy" 
 
 TeamName: Watt2Buy
-
-Changes made by Hung
+Team Members:
+Vanessa Van Scyoc Hernandez
+Hung Bui

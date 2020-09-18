@@ -2,5 +2,5 @@
 
 TeamName: Watt2Buy
 
-Team Members:
+Project Team Members:
 Vanessa Van Scyoc Hernandez

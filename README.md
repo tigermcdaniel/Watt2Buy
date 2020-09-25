@@ -1,13 +1,16 @@
 "# WATT2Buy" 
 
-TeamName:
+VanBran
+TeamName: Watt2Buy
+VanBran
 
-Watt2Buy
-
+TeamName: Watt2Buy
 
 Project Team Members:
 
 Vanessa Van Scyoc Hernandez
 Hung Bui
+VanBran
 Kunal Sinha
-Changed Again??
+Simon
+Tiger

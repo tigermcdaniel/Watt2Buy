@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/shoppingcart.css">
+
+    <style>
+        .row{
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        }
+        .card {
+        /*float: left;*/
+        max-width: 33.333%;
+        padding: .75rem;
+        margin-bottom: 2rem;
+        border: 0;
+        flex-basis: 33.333%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        }
+
+        .card > img {
+        margin-bottom: .75rem;
+        }
+
+        .card-text {
+        font-size: 85%;
+        font-weight: bold;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -52,36 +83,199 @@
 
     <section class="jumbotron text-center">
         <div class="container">
-            <h3 class="jumbotron-heading">SURVEY</h1>
-            <p>
-                As a customer, I should be able to to give my requirements so that I can get the power
-                options available to me, tailored to my location, power needs, and type of building.
-            </p>
-            <p>
-                Functional: The survey should be able to get all information pertaining to the
-                customer’s intended usage for a personalized power plan. This should primarily
-                include the location and amount of power usage. This information will be used to
-                calculate an estimated order and give options to the customer at the end of the survey.
-            </p>
-            <p>
-                Non Functional: Survey should appear clean, readable and simple. Choices should be
-                well formatted with clear instructions. Tips on better conserving energy and water will
-                be displayed on a side panel.
-            </p>
+            <h1>Artificial Sustainability Advisor Survey</h1>
+            <br>
+            <br>
+            <form>
+
+                <div class="form-group">
+                  <label for="articleTitle"><h4>Name of Property</h4></label>
+                  <input type="text" class="form-control" id="articleTitle" placeholder="Name">
+                </div>
+
+                <br>
+                <br>
+
+              <div class="form-row">
+                <div class="col">
+                    <label for="pages"><h5>Types of Solutions to show:</h5></label><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="selectTags2" value="option2">
+                    <label class="form-check-label" for="selectTags2">Solar Panel Installation</label>
+                  </div><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="selectTags3" value="option3">
+                    <label class="form-check-label" for="selectTags3">Wind Turbine Installation</label>
+                  </div><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="selectTags4" value="option4">
+                    <label class="form-check-label" for="selectTags4">Natural Gas Connection</label>
+                  </div><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="selectTags5" value="option5">
+                    <label class="form-check-label" for="selectTags5">Hydro-Electric Power Availability</label>
+                  </div><br>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="selectTags5" value="option5">
+                      <label class="form-check-label" for="selectTags5">Electric Car Storage Solutions</label>
+                    </div><br>
+                </div>
+                  <div class="col">
+                      <label for="pages"><h5>Please select type of property:</h5></label>
+                    <select class="form-control" id="pages">
+                        <option>Residential Houses and Villahs</option>
+                        <option>Residential Buildings</option>
+                        <option>Commercial Small Plots</option>
+                        <option>Commercial Largescale Campus</option>
+                        <option>Commercial Building</option>
+                    </select>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="articleTitle"><h4>Current amount spent on energy p/m:</h4></label>
+                            <input type="text" class="form-control" id="articleTitle" placeholder="$">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="articleTitle"><h4>Energy Usage p/m:</h4></label>
+                            <input type="text" class="form-control" id="articleTitle" placeholder="in Mega Watts">
+                        </div>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+  
+                  <div class="form-row">
+  
+                      <div class="col">
+                          <div class="form-group">
+                              <label for="articleTitle"><h4>Angle of rooftop slant (if any):</h4></label>
+                              <input type="text" class="form-control" id="articleTitle" placeholder="&deg">
+                          </div>
+                      </div>
+  
+                      <div class="col">
+                          <div class="form-group">
+                              <label for="articleTitle"><h4>Downward slant point direction</h4></label>
+                              <input type="text" class="form-control" id="articleTitle" placeholder="Ex. 21&deg North, 45&deg West">
+                          </div>
+                      </div>
+  
+                  </div>
+
+                  <br>
+                  <br>
+    
+                    <div class="form-row">
+    
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="articleTitle"><h4>Proximity to known water source:</h4></label>
+                                <input type="text" class="form-control" id="articleTitle" placeholder="miles">
+                            </div>
+                            <div class="form-group">
+                                <label for="articleTitle"><h6>Name of particular water source:</h6></label>
+                                <input type="text" class="form-control" id="articleTitle" placeholder="name">
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="articleTitle"><h4>Proximity to known Natural Gas Source:</h4></label>
+                                <input type="text" class="form-control" id="articleTitle" placeholder="miles">
+                            </div>
+                            <div class="form-group">
+                                <label for="articleTitle"><h6>Name of particular Natural Gas Source:</h6></label>
+                                <input type="text" class="form-control" id="articleTitle" placeholder="name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    
+                    <div class="form-group">
+                        <label for="articleTitle"><h4>Zip Code of property:</h4></label>
+                        <input type="text" class="form-control" id="articleTitle" placeholder="Code">
+                      </div>
+
+                <br><br><br>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">
+                    Save results in current account if logged in
+                    </label>
+                </div>
+                <br><br><br>
+
+                <!--<button type="submit" class="btn btn-primary">Calculate Results</button>-->
+                <a class="btn btn-dark btn-lg" href="./Results.html" role="button">Calculate Results</a>
+
+            </form>
         </div>
     </section>
 
+    <h2 style="text-align: center;">Further tips to save the environment!</h2>
+    <div class="container">
+        <div class="row">
+          <div class="card">
+            <img src="./img/lights.jpeg" width="350" height="250">
+            <p class="card-text">Keep your lights off between 4 p.m. to 9 p.m, as long as it’s safe.</p>
+          </div>
+          <div class="card">
+            <img src="./img/therm.jpg"  width="350" height="250">
+            <p class="card-text">Set your thermostat to 78 degrees or higher, health permitting, turn your air conditioner off when not at home and keep furniture from blocking vents.</p>
+          </div>
+           <div class="card">
+            <img src="./img/charge.jpg"  width="350" height="250">
+            <p class="card-text">Charge batteries and use large appliances before 3 p.m. or after 9 p.m.</p>
+          </div>
+           <div class="card">
+            <img src="./img/laundry.jpg"  width="350" height="250">
+            <p class="card-text">Charge batteries and use large appliances before 3 p.m. or after 9 p.m.</p>
+          </div>
+          <div class="card">
+            <img src="./img/gaming.jpg"  width="350" height="250">
+            <p class="card-text">Unplug energy vampires when not in use, such as televisions, game consoles and coffee makers.</p>
+          </div>
+          <div class="card">
+            <img src="./img/fan.jpg"  width="350" height="250">
+            <p class="card-text">Use a fan(s) instead of your air conditioner.</p>
+          </div>
+          <div class="card">
+            <img src="./img/window.jpg"  width="350" height="250">
+            <p class="card-text">Cover your windows during the evenings during this fall season.</p>
+          </div>
+          <div class="card">
+            <img src="./img/stove.jpg"  width="350" height="250">
+            <p class="card-text">Opt for cooking on your stovetop, microwave or outside grill instead of your oven.</p>
+          </div>
+          <div class="card">
+            <img src="./img/fridge.jpg"  width="350" height="250">
+            <p class="card-text">Limit opening your refrigerator/freezer doors.</p>
+          </div>
 
-
-
-
+      
+        </div>
+      </div>
 
     
     <footer>
         <p>WATT2BUY, Copyright &copy; 2020</p>
     </footer>
 
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 </body>
 </html>

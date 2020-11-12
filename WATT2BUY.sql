@@ -3,10 +3,7 @@ CREATE DATABASE WATT2BUY;
 USE WATT2BUY;
 
 CREATE TABLE USER (
-  id INT NOT NULL AUTO_INCREMENT, -- unique id
-  firstName VARCHAR(50),
-  lastName VARCHAR(50),
-  mobile VARCHAR(15),
+  userName VARCHAR(50), -- primary key
   email VARCHAR(50),
   password VARCHAR(32),
   role VARCHAR(10), -- admin / manager / vendor / customer

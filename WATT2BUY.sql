@@ -2,15 +2,17 @@ CREATE DATABASE WATT2BUY;
 
 USE WATT2BUY;
 
-CREATE TABLE USER (
+
+CREATE TABLE public."USER" (
   userName VARCHAR(50), -- primary key
   email VARCHAR(50),
-  password VARCHAR(32),
+  hash INT NOT NULL,
   role VARCHAR(10), -- admin / manager / vendor / customer
-  registeredAt DATETIME NOT NULL,
-  lastLogin DATETIME,
-  PRIMARY KEY (id)
-  );
+  registeredAt timestamp  NOT NULL,
+  lastLogin timestamp ,
+  PRIMARY KEY (userName)
+);
+  
   
   
   

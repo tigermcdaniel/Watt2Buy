@@ -180,9 +180,10 @@ function resultCalc(){
       } else{
         string=string+teslaRoof
       }
+      if(document.getElementById("yes").value=-"on"){
       if(parseInt(document.getElementById("sizeInput").value)>4){
         string=string+garden
-      }
+      }}
     }
     if(document.getElementById("EVCheck").value=="on"){
       if(document.getElementById("truck").value=="on"){

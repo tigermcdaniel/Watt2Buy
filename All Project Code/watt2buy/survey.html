@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/shoppingcart.css">
 
-    <style>
+    <!-- <style>
         .row{
         align-items: stretch;
         display: flex;
@@ -36,8 +36,7 @@
         font-size: 85%;
         font-weight: bold;
         }
-    </style>
-
+    </style> -->
 </head>
 <body>
 
@@ -88,13 +87,13 @@
             <br>
             <form>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label for="articleTitle"><h4>Name of Property</h4></label>
                   <input type="text" class="form-control" id="articleTitle" placeholder="Name">
                 </div>
 
                 <br>
-                <br>
+                <br> -->
 
 
                     <div class="form-group">
@@ -105,8 +104,45 @@
                     <br>
                     <br>
 
+                    <div class="form-group">
+                        <label for="articleTitle"><h4>Are you interested in installing solar panels?</h4></label>
+                        <input type="text" class="form-control" id="solarInt" placeholder="yes or no">
+                    </div>
 
-              <div class="form-row">
+                    <br>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="articleTitle"><h4>Are you interested in purchasing an Electric Vehicle?</h4></label>
+                        <input type="text" class="form-control" id="EVInt" placeholder="yes or no">
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="articleTitle"><h4>Do you have approximately ?sqft in your yard for solar pannels? (Best suited over a garden!)</h4></label>
+                        <input type="text" class="form-control" id="freeSpace" placeholder="yes or no">
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="articleTitle"><h4>Do you have proper roofing to install rooftop solar?</h4></label>
+                        <input type="text" class="form-control" id="roofingType" placeholder="yes or no">
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="articleTitle"><h4>Do you need a truck bed?</h4></label>
+                        <input type="text" class="form-control" id="truckBed" placeholder="yes or no">
+                    </div>
+
+                    <br>
+                    <br>
+
+
+              <!-- <div class="form-row">
                 <div class="col">
                     <label for="pages"><h5>Types of Solutions to show:</h5></label><br>
                   <div class="form-check form-check-inline">
@@ -227,16 +263,30 @@
                     Save results in current account if logged in
                     </label>
                 </div>
-                <br><br><br>
+                <br><br><br> -->
 
                 <!--<button type="submit" class="btn btn-primary">Calculate Results</button>-->
-                <a class="btn btn-dark btn-lg" href="./Results.html" role="button">Calculate Results</a>
+                <!-- <a class="btn btn-dark btn-lg" onclick="budgetTest()" href="./Results.html" role="button">Calculate Results</a> -->
+                <a class="btn btn-primary btn-lg" onclick="resultCalc()" role="button">Calculate Results</a>
 
             </form>
         </div>
+
     </section>
 
-    <h2 style="text-align: center;">Further tips to save the environment!</h2>
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Results</h1>
+        </div>
+        <div id="message">
+        </div>
+    <div class= "row" id="resultsInSurvey">
+    </div>
+  </section>
+
+
+
+    <!-- <h2 style="text-align: center;">Further tips to save the environment!</h2>
     <div class="container">
         <div class="row">
           <div class="card">
@@ -278,12 +328,14 @@
 
 
         </div>
-      </div>
+      </div> -->
 
 
     <footer>
         <p>WATT2BUY, Copyright &copy; 2020</p>
     </footer>
+
+    <script src="./js/Results.js"></script>
 
     <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->

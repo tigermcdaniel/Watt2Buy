@@ -1,8 +1,6 @@
 CREATE DATABASE WATT2BUY;
 
-USE WATT2BUY;
-
-
+USE WATT2BUY; 
 CREATE TABLE public."USER" (
   userName VARCHAR(50), -- primary key
   email VARCHAR(50),

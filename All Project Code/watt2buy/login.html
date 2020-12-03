@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
     <title>Login</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/signup.css">
     <script src="./js/login.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
     <!-- NAV -->
@@ -68,11 +71,11 @@
                     <label for="inputPassword">Password</label>
                   </div>
 
-                  <button onClicl="login()" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
+                  <button onClick="login()" class="btn btn-lg btn-primary btn-block text-uppercase" type="reset">Login</button>
                   <a class="d-block text-center mt-2 small" href="./signup.html">New to WATT2BUY? Click here to register</a>
                   <hr class="my-4">
-                  <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-                  <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+                  <button onclick="onSignIn()" class="btn btn-lg btn-google btn-block text-uppercase" type="reset"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+                  <button onclick="" class="btn btn-lg btn-facebook btn-block text-uppercase" type="reset"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
                 </form>
               </div>
             </div>
@@ -84,7 +87,7 @@
         <p>WATT2BUY, Copyright &copy; 2020</p>
     </footer>
 
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

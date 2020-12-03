@@ -38,7 +38,7 @@ var pgp = require('pg-promise')();
 let dbConfig = {
     host: 'localhost',
     port: 5432,
-    database: 'watt2buy',
+    database: 'WATT2BUY',
     user: 'postgres',
     password: 'postgre'
 };
@@ -102,6 +102,7 @@ app.use(express.static(__dirname + '/'));//This line is necessary for us to use 
   			Next it will pass this result to the player_info view (pages/player_info), which will use the ids & names to populate the select tag for a form
 ************************************/
 
+/*
 // login page
 app.get('/', function(req, res) {
 	res.render('pages/login',{
@@ -143,6 +144,7 @@ app.get('/home', function(req, res) {
         })
 
 });
+*/
 
 app.get('/nodejs/signup', function(req, res) {
 
@@ -169,38 +171,38 @@ app.get('/nodejs/signup', function(req, res) {
     });
 });
 
-app.get('/home/pick_color', function(req, res) {
-	var color_choice = req.query.color_selection;
-	var color_options =  'select * from favorite_colors;';
-	var color_message = "select color_msg from favorite_colors where hex_value = '" + color_choice + "';";
+app.get('/nodejs/login', function(req, res) {
+
+	var userName = req.query.userName;
+    var hash = req.query.hash;
+
+	var find_user = 'select * from USER where userName=' + userName + ' and hash=' + hash + ';';
+
 	 db.task('get-everything', task => {
         return task.batch([
-            task.any(color_options),
-            task.any(color_message)
+            task.any(find_user)
         ]);
     })
     .then(data => {
-    	res.render('pages/home',{
-				my_title: "Home Page",
-				data: data[0],
-				color: color_choice,
-				color_msg: data[1][0].color_msg
-			})
+        console.log(data[1])
+        /*
+    	res.render('pages/player_info',{
+            my_title: "Football Games",
+            players: data[0],
+            player_info: data[1][0],
+            games_played: data[2][0].count
+        })
+        */
     })
     .catch(error => {
         // display error message in case an error
-            request.flash('error', err);
-            response.render('pages/home', {
-                title: 'Home Page',
-                data: '',
-                color: '',
-                color_msg: ''
-            })
+        request.flash('error', err);
     });
-
 });
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // Football Games Page
 app.get('/team_stats', function(req, res) {
 	var list_games = 'select * from football_games;';

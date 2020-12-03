@@ -38,7 +38,7 @@ var pgp = require('pg-promise')();
 let dbConfig = {
     host: 'localhost',
     port: 5432,
-    database: 'WATT2BUY',
+    database: 'watt2buy',
     user: 'postgres',
     password: 'postgre'
 };
@@ -168,6 +168,7 @@ app.get('/nodejs/signup', function(req, res) {
     .catch(error => {
         // display error message in case an error
         res.status(500).send(error);
+        console.log(error);
     });
 });
 
@@ -176,7 +177,7 @@ app.get('/nodejs/login', function(req, res) {
 	var userName = req.query.userName;
     var hash = req.query.hash;
 
-	var find_user = 'select * from USER where userName=' + userName + ' and hash=' + hash + ';';
+	var find_user = 'select * from public.\"USER\" where username=\'' + userName + '\' and hash=' + hash + ';';
 
 	 db.task('get-everything', task => {
         return task.batch([
@@ -184,7 +185,14 @@ app.get('/nodejs/login', function(req, res) {
         ]);
     })
     .then(data => {
-        console.log(data[1])
+        console.log(data[0]);
+
+        if(data[0].length == 0){
+            res.status(404).end();
+        }else {
+            res.status(200).end();
+        }
+        
         /*
     	res.render('pages/player_info',{
             my_title: "Football Games",
@@ -196,7 +204,8 @@ app.get('/nodejs/login', function(req, res) {
     })
     .catch(error => {
         // display error message in case an error
-        request.flash('error', err);
+        res.status(500).send(error);
+        console.log(error);
     });
 });
 

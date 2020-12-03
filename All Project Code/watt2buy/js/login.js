@@ -24,6 +24,8 @@ function login(){
     if (xhttp.status != 200) {
         alert("Login Failed.");
         return;
+    }else {
+        alert("Login Successful.");
     }
 
     console.log(userName + " Logged in.");

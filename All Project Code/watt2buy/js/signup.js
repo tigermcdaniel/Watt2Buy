@@ -27,10 +27,12 @@ function AddUser(){
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "/nodejs/signup?userName="+userName+"&email="+email+"&hash="+hash, false);
     xhttp.send();
-    
+
     if (xhttp.status != 200) {
       alert("Failed creating new user!");
       return;  
+    }else {
+      alert("Successfully created new user.");
     }
 
     //redirect the user after they have logged in 

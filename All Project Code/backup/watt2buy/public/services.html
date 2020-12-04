@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/shoppingcart.css">
+    <style>
+    /* h1 {text-alight:center;} */
+    </style>
+</head>
+<body>
+
+
+<!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
+    <a class="navbar-brand branding" href="./index.html"><h1><span class="highlight">WATT</span>2BUY</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link current" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./survey.html">Survey</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Results.html">Results</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./services.html">Services</a>
+        </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="./signup.html"><span class="fas fa-user"></span> Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./login.html"><span class="fas fa-sign-in-alt"></span> Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contactForm.html"><span class="fas fa-contact-Form"></span>Contact Us</a>
+        </li>
+        </ul>
+
+        <div class="nav-info-items d-none d-lg-flex ">
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0 text-capitalize"><span id="item-count">0</span> items - $<span class="item-total">0</span></p>
+          </div>
+        </div>
+    </div>
+    </nav>
+
+    <section class="jumbotron text-center pos">
+      <div class="container">
+          <h3 class="jumbotron-heading">SERVICES</h1>
+          <p>
+          <p>
+            Here are the all the products we recommend. Take our survey to have personalized recomendations!
+          </p>
+      </div>
+      <br>
+
+<!-- =============================== CART ============================= -->
+      <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+          <div id="cart" class="cart">
+        
+            <!-- cart total -->
+            <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5" style="visibility: hidden;">
+              <h5>total</h5>
+              <h5> $ <strong id="cart-total" class="font-weight-bold"></strong> </h5>
+            </div>
+            <!--end cart total -->
+            <!-- cart buttons -->
+            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+              <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+              <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+            </div>
+            <!--end of  cart buttons -->
+            <!--  -->
+          </div>
+        </div>
+      </div>
+      
+
+<!-- ================================================================== -->
+      <br><br>
+      <h1 style="text-align: left;">Solar</h1>
+
+    <!-- item1 -->
+    <div class="row" class="store-items" id="store-items">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-4 mx-auto my-3 store-item  rooftop_solar" data-item="rooftop_solar">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/ResRoofTopSolar.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Rooftop Solar</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5,185</strong></h5>
+            </div>
+            <p class="card-text">Go to option for new solar investors as one can produce their own energy without requiring land space.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item1 -->
+
+
+      <!-- item2 -->
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-4 mx-auto my-3 store-item solar_roof" data-item="solar_roof">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/solarTiles.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Solar Roof</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">31,133</strong></h5>
+              </div>
+              <p class="card-text"> Replace your current roof with Solar Roof and power your home with a fully integrated solar system.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item2 -->
+
+
+
+      <!-- item3 -->
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-4 mx-auto my-3 store-item  garden_solar" data-item="garden_solar">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/gardenSolar.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Garden Solar</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">4,857</strong></h5>
+            </div>
+            <p class="card-text">Provide shade in your yard and garden while also powering your home with this 3000W system!</p
+          </div>
+        </div>
+      </div>
+      <!-- end of item 3 -->
+    </div> <!-- end of row 1 -->
+    
+
+<!-- ================================================================== -->
+
+    <h1  class="text-center">Electric Vehicles</h1>
+    <br>
+    <!-- item1 -->
+    <div class="row" class="store-items" id="store-items">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-4 mx-auto my-3 store-item tesla_model_3" data-item="tesla_model_3">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/teslaModel3.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Tesla Model 3</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">44,500</strong></h5>
+            </div>
+            <p class="card-text">Rear-Wheel Drive Standard Long Range Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item1 -->
+
+
+      <!-- item2 -->
+      <div class="col-sm-12 col-lg-4 col-md-4 mx-auto my-3 store-item hummer_ev2" data-item="hummer_ev2">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/HummerEV2.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">GMC Hummer EV</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">79,995</strong></h5>
+            </div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item2 -->
+
+
+      <!-- item3 -->
+      <div class="col-sm-12 col-lg-4 col-md-4 mx-auto my-3 store-item nissan_leaf" data-item="nissan_leaf">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/nissanLeaf.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Nissan Leaf</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">31,600</strong></h5>
+            </div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item3 -->
+    </div> <!-- end of row 2 -->
+    <br>
+
+
+
+<!-- ================================================================== -->
+
+    <h1  class="text-center">Smart Appliances</h1>
+    <br>
+    <!-- item1 -->
+    <div class="row" class="store-items" id="store-items">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-md-4 mx-auto my-3 store-item tesla_model_3" data-item="tesla_model_3">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/smartTherm.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Smart Thermostat</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">199.99</strong></h5>
+            </div>
+            <p class="card-text">Google Nest Thermostat 3rd Generation is a programmable smart thermostat that learns your schedule and the temperatures you like and programs itself to help you save energy and stay comfortable.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item1 -->
+
+
+      <!-- item2 -->
+      <div class="col-sm-12 col-lg-4 col-md-4 mx-auto my-3 store-item smart_shades" data-item="smart_shades">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/smartShades.JPG" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Smart Shades</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">399.00</strong></h5>
+            </div>
+            <p class="card-text">MySmartRollerShades are the smartest, Bluetooth-enabled roller shades for interior windows. include a solar charging panel so you never have to plug them in.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item2 -->
+
+
+      <!-- item3 -->
+      <div class="col-sm-12 col-lg-4 col-md-4 mx-auto my-3 store-item smart_lighting" data-item="smart_lighting">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./img/smartLighting.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Smart Lighting</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">99.99</strong></h5>
+            </div>
+            <p class="card-text">Each kit contains 4 Philips Hue White A19 60W Energy Star Certified LED Smart bulbs. Bulbs can be controlled remotely with the Philips Hue App or voice activated with Alexa.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of item3 -->
+    </div> <!-- end of row 3 -->
+
+  </section>
+
+
+
+
+    <footer>
+        <p>WATT2BUY, Copyright &copy; 2020</p>
+    </footer>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

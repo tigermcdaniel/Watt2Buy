@@ -109,8 +109,7 @@ app.get('/nodejs/saveResults', function(req, res) {
     var results = req.query.results;
     var userName = req.query.userName;
     
-    var insert_statement = "INSERT INTO public.\"RESULTS\"(username, results) VALUES('" + userName + "','"
-                 + "','" + results +  "');";
+    var insert_statement = "INSERT INTO public.\"RESULTS\"(username, results) VALUES('" + userName + "','" + results +  "');";
 
 
 	db.task('get-everything', task => {

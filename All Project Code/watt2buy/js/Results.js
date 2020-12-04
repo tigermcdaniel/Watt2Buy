@@ -2,24 +2,87 @@
 
 console.log("Test1");
 
-
+// Budget messages
 var budgetAppMessage = "<h5> Your budget is too small to fund the product you're looking for. Instead we recommend these small investments for energy saving.</h1><br><br>";
 var budgetMessage = "<h5> Your budget is too small to fund the product you're looking for. These are the products we recommend you purchase once you have enough funding.</h1><br><br>";
 var budgetEVMessage = "<h5> You don't have sufficent funding for an Electrical Vehicle, but here are some solar recommendations.</h1><br><br>";
 var budgetTilesMessage = "<p> Note: You don't have sufficent funding for Solar Tile Roofing, but we recommend it as a future investment once you have enough funding.</p><br><br>";
 
+// Electrical appliances
 var resultTherm= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartTherm.jpg'><div class='card-body'><h3 class='card-title'>Smart Thermostat</h3><p class='card-text'>Google Nest Thermostat 3rd Generation is a programmable smart thermostat that learns your schedule and the temperatures you like and programs itself to help you save energy and stay comfortable.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $199.99</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 var resultShade= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartShades.JPG'><div class='card-body'><h3 class='card-title'>Smart Shades</h3><p class='card-text'>MySmartRollerShades are the smartest, Bluetooth-enabled roller shades for interior windows. include a solar charging panel so you never have to plug them in.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $399.00</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 var resultLight= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartLighting.jpg'><div class='card-body'><h3 class='card-title'>Smart Lighting</h3><p class='card-text'>Each kit contains 4 Philips Hue White A19 60W Energy Star Certified LED Smart bulbs. Bulbs can be controlled remotely with the Philips Hue App or voice activated with Alexa.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $99.99</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 
-var resultTiles= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/solarTiles.jpg'><div class='card-body'><h3 class='card-title'>Solar Roof</h3><p class='card-text'>Replace your current roof with Solar Roof and power your home with a fully integrated solar system.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $31,133</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
-var resultRoof= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/ResRoofTopSolar.jpg'><div class='card-body'><h3 class='card-title'>Rooftop Solar</h3><p class='card-text'>Go to option for new solar investors as one can produce their own energy without requiring land space.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $5,18</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
-var resultGarden= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/gardenSolar.jpg'><div class='card-body'><h3 class='card-title'>Garden Solar</h3><p class='card-text'>Provide shade in your yard and garden while also powering your home with this 3000W system</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $4,857</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
+// Solar Solutions
+var resultTiles= "<div style='width: 33%;'>\
+                    <div class='card'>\
+                      <img class='card-img-top' src='./img/solarTiles.jpg'>\
+                      <div class='card-body'><h3 class='card-title'>Solar Roof</h3>\
+                        <p class='card-text'>Replace your current roof with Solar Roof and power your home with a fully integrated solar system.</p>\
+                      </div>\
+                      <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Investment Cost: $31,133</li>\
+                      </ul>\
+                      <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Time taken for ROI: "
+var resultTiles2=                                                      " months</li>\
+                      </ul>\
+                      <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Energy Produced (Limit):" 
+var resultTiles3=                                                      " kW/month</li>\
+                      </ul>\
+                      <a href='#' class='btn btn-primary'>Add to Cart</a>\
+                    </div>\
+                  </div>";
 
+var resultRoof= "<div style='width: 33%;'>\
+                    <div class='card'>\
+                      <img class='card-img-top' src='./img/ResRoofTopSolar.jpg'>\
+                      <div class='card-body'><h3 class='card-title'>Rooftop Solar</h3>\
+                        <p class='card-text'>Go to option for new solar investors as one can produce their own energy without requiring land space.</p>\
+                      </div>\
+                      <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Investment Cost: $5,18</li>\
+                      </ul>\
+                      <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Time taken for ROI: "
+var resultRoof2=                                                      " months</li>\
+                      </ul>\
+                      <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Energy Produced (Limit): " 
+var resultRoof3=                                                      " kW/month</li>\
+                      </ul>\
+                      <a href='#' class='btn btn-primary'>Add to Cart</a>\
+                    </div>\
+                  </div>";
+
+var resultGarden= "<div style='width: 33%;'>\
+                      <div class='card'>\
+                        <img class='card-img-top' src='./img/gardenSolar.jpg'>\
+                        <div class='card-body'><h3 class='card-title'>Garden Solar</h3>\
+                          <p class='card-text'>Provide shade in your yard and garden while also powering your home with this 3000W system</p>\
+                        </div>\
+                        <ul class='list-group list-group-flush'>\
+                          <li class='list-group-item'>Investment Cost: $4,857</li>\
+                        </ul>\
+                        <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Time taken for ROI: "
+var resultGarden2=                                                      " months</li>\
+                      </ul>\
+                      <ul class='list-group list-group-flush'>\
+                        <li class='list-group-item'>Energy Produced (Limit): " 
+var resultGarden3=                                                      " kW/month</li>\
+                      </ul>\
+                      <a href='#' class='btn btn-primary'>Add to Cart</a>\
+                    </div>\
+                  </div>";
+
+// Electric Vehicles
 var resultTesla = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/teslaModel3.jpg'><div class='card-body'><h3 class='card-title'>Tesla Model 3</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $44,500</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 var resultNissan = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/nissanLeaf.jpg'><div class='card-body'><h3 class='card-title'>Nissan Leaf</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $31,600</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 var resultHummer = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/HummerEV2.jpg'><div class='card-body'><h3 class='card-title'>GMC Hummer EV</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost:  $79,995</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 
+// title and save results
 var title='<h1 class="jumbotron-heading">Results</h1><div class= "row"><div id="message"></div>'
 var userButton='<br><br><div class="form-group" align="center"><label for="articleTitle"><p>Save Results:</p> <input type="text" class="form-control" id="username" placeholder="Enter username" align="center" style="width: 300px;" > <a class="btn btn-primary btn-lg" onclick="saveResults()" role="button" style="color:white">Save</a></label></div>';
 
@@ -122,31 +185,64 @@ function calcSolar(){
   var inFreeSpace = document.getElementById("gardenAvail");
   var inRoof = document.getElementById("clay");
   var inBudget = document.getElementById("budget").value;
-  console.log("in calcSolar");
-  if(inFreeSpace.checked){
-    if (inRoof.checked){
-    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultRoof + resultGarden + "</div>"+'</div>'+userButton;
-    }
-    else{//inRoof=="no"
-      document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTiles + resultGarden + "</div>"+'</div>'+userButton;
-      if(inBudget<31000){
-        document.getElementById("message").innerHTML = budgetTilesMessage;
-      }
-      }
-  }
 
-  else{//inFreeSpace=="no"
-    if (inRoof.checked){
-    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultRoof + "</div>"+'</div>'+userButton;
-    }
-    else{//inRoof=="no"
-      document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTiles + "</div>"+'</div>'+userButton;
-      if(inBudget<31000){
-        document.getElementById("message").innerHTML = budgetTilesMessage;
-      }
+  // API Text
+  ann_dni = '';
+  lat = parseInt(document.getElementById("lat").value)
+  lon = parseInt(document.getElementById("long").value)
+  console.log('Lat'+lat+' lon'+lon)
+  // GET URL for NREL Solar Resource API
+  var url = 'https://developer.nrel.gov/api/solar/solar_resource/v1.json?api_key=aDegwj1x6ORLvulZCDXHuTXg1MxVKsf16Di2xWqw&lat='+lat+'&lon='+lon;
+
+  console.log(url)
+
+  // GET JSON from API 
+  $.getJSON(url, function(data) {
+      ann_dni = data.outputs.avg_dni.annual;// kw/m^2/day
+      console.log('Annual DNI:'+ ann_dni);
+
+      mon_dni = (ann_dni*31); // kw/m^2/month
+
+      //tiles
+      time1 =  Math.trunc(5185/parseInt(document.getElementById("expend").value)); // time for roi 1
+      eLim1 =  Math.trunc((mon_dni*16*0.22)); //1
+
+      //roof
+      time2 =  Math.trunc(31133/parseInt(document.getElementById("expend").value)); // time for roi 2
+      eLim2 =  Math.trunc((mon_dni*16*0.30)); //2
       
-    }
-  }
+      //garden
+      time3 =  Math.trunc(4875/parseInt(document.getElementById("expend").value)) // time for roi 3
+      eLim3 =  Math.trunc((mon_dni*16*0.14))//3
+      
+      console.log("in calcSolar");
+      if(inFreeSpace.checked){
+        if (inRoof.checked){
+        document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + (resultRoof + time2 + resultRoof2 +eLim2+ resultRoof3)+ (resultGarden + time3+resultGarden2+eLim3+resultGarden3) + "</div>"+'</div>'+userButton;
+        }
+        else{//inRoof=="no"
+          document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + (resultTiles+time1+resultTiles2+eLim1+resultTiles3) + (resultGarden + time3+resultGarden2+eLim3+resultGarden3) + "</div>"+'</div>'+userButton;
+          if(inBudget<31000){
+            document.getElementById("message").innerHTML = budgetTilesMessage;
+          }
+          }
+      }
+
+      else{//inFreeSpace=="no"
+        if (inRoof.checked){
+        document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + (resultRoof + time2 + resultRoof2 +eLim2+ resultRoof3) + "</div>"+'</div>'+userButton;
+        }
+        else{//inRoof=="no"
+          document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + (resultTiles+time1+resultTiles2+eLim1+resultTiles3) + "</div>"+'</div>'+userButton;
+          if(inBudget<31000){
+            document.getElementById("message").innerHTML = budgetTilesMessage;
+          }
+          
+        }
+      }
+      console.log('Annual DNI End of ajax:'+ ann_dni)
+  });
+
 }
 
 

@@ -94,12 +94,22 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 //Create Database Connection
 var pgp = require('pg-promise')();
 
+/*
 let dbConfig = {
     host: 'localhost',
     port: 5432,
     database: 'watt2buy',
     user: 'postgres',
     password: 'postgre'
+};
+*/
+//connect to Heroku's Database
+let dbConfig = {
+    host: 'ec2-54-237-135-248.compute-1.amazonaws.com',
+    port: 5432,
+    database: 'd73eo47gvj8rcs',
+    user: 'rcrekbbadoyfnd',
+    password: 'c60dba9ed30e7805586994eb8e5960e7d9607ab0a29e385901ce7e3c93bf0b74'
 };
 
 const isProduction = process.env.NODE_ENV === 'production';

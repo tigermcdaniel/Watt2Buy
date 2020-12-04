@@ -90,11 +90,18 @@
                         
                   <div class="col"></div>
                           <div class="col">
-                <div class="checkboxes" align="left">
-                  <label for="solarInt"><input type="checkbox" id="solarInt" /> <span>Solar Panels</span></label> <br>
+                <div class="checkboxes" align="left"  >
+                  <!-- <label for="solarInt"><input type="checkbox" id="solarInt" /> <span>Solar Panels</span></label> <br>
                   <label for="EVInt"><input type="checkbox" id="EVInt" /> <span>Electric Vehicles</span></label>  <br>
-                  <label for="Other"><input type="checkbox" id="Other" /> <span>Smaller Appliances</span></label>  <br>
-                </div>
+                  <label for="Other"><input type="checkbox" id="Other" /> <span>Smaller Appliances</span></label>  <br>-->
+
+                  <input type="radio" id="solarInt" name="test" value="on" align="right" >
+                  <label for="solarInt">Solar Panels</label><br>
+                  <input type="radio" id="EVInt" name="test" value="on" >
+                  <label for="EVInt">Electric Vehicles</label><br>
+                  <input type="radio" id="Other" name="test" value="on" >
+                  <label for="Other">Smaller Appliances</label><br>
+              </div>
 
               </div>
           
@@ -106,7 +113,7 @@
                       <div class="form-group" align="left">
                           <label for="articleTitle">  <h4>Do you have >4 sq meters of free yard space?</h4></label><br>
                           <div class="col" id="freeSpace">
-                            <input type="radio" id="yes" name="space" value="yes" align="right">
+                            <input type="radio" id="gardenAvail" name="space" value="yes" align="right">
                             <label for="yes">Yes</label><br>
                             <input type="radio" id="no" name="space" value="no">
                             <label for="no">No</label><br>
@@ -119,11 +126,11 @@
                           <label for="articleTitle"><h4>What kind of roofing do you have?</h4></label>
                           <div class="col" id="roofingType">
                             <input type="radio" id="wood" name="gender" value="wood" align="right" >
-                            <label for="yes">Wood Shake</label><br>
+                            <label for="wood">Wood Shake</label><br>
                             <input type="radio" id="asphalt" name="gender" value="asphalt" >
-                            <label for="no">Asphalt Shingles</label><br>
+                            <label for="asphalt">Asphalt Shingles</label><br>
                             <input type="radio" id="clay" name="gender" value="clay" >
-                            <label for="no">Clay/ Cement</label><br>
+                            <label for="clay">Clay/ Cement</label><br>
                           </div>
                       </div>
 
@@ -134,10 +141,13 @@
                           <div class="col">
                 <div class="checkboxes" align="left">
                   <label for="Other"><input type="checkbox" id="attractive" /> <span>Attractive appearence</span></label> <br>
-                  <label for="truck"><input type="checkbox" id="truckBed" /> <span>Heavy lifting</span></label> <br>
+                  <label for="truckBed"><input type="checkbox" id="truckBed" /> <span>Heavy lifting</span></label> <br>
                   <label for="EV"><input type="checkbox" id="cheap" /> <span>Cost Effective</span></label>  <br>
                   <label for="Other"><input type="checkbox" id="distance" /> <span>Long commutes to work</span></label> <br>
                 </div>
+
+
+                
 
               </div>
           
@@ -229,7 +239,7 @@
     </footer>
 
     <script src="./js/Results.js"></script>
-
+    <script src="./js/survey.js"></script>
     <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 </body>

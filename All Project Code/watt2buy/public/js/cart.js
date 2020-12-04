@@ -1,7 +1,8 @@
-// localStorage.clear();
+localStorage.clear();
 
-let items = [];
+let items;
 // loadCart();
+
 
 // show cart
 (function(){
@@ -13,56 +14,57 @@ let items = [];
     })
 })();
 
-// function loadCart(){
-//     let items;
-//     if(localStorage.getItem('items')){
-//         items = JSON.parse(localStorage.getItem('items'));
-        
-//     }
+function loadCart(){
+    if(localStorage.getItem('items')){
+        items = JSON.parse(localStorage.getItem('items'));   
+    }
+
+    console.log(items[0].name);
   
 
-//     if(items.length > 0){
-//         for(let i = 0 ; i < items.length; i++){
+    if(items.length > 0){
+        for(let i = 0 ; i < items.length; i++){
             
-//             const cartItem = document.createElement('div');
-//                     cartItem.classList.add('cart-item', 'd-flex', 'justify-content-between', 'text-capitalize', 'my-3');
-//                     cartItem.innerHTML = `
-//                         <img src="${items[i].imagePath}" class="img-fluid rounded-circle" id="item-img" alt="">`;
+            const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item', 'd-flex', 'justify-content-between', 'text-capitalize', 'my-3');
+                    cartItem.innerHTML = `
+                        <img src="${items[i].image}" class="img-fluid rounded-circle" id="item-img" alt="">
                         
-//                     //     <div class="item-text">
-//                     //     <p id="cart-item-title" class="font-weight-bold mb-0">${items[i].name}</p>
-//                     //     <span>$</span>
-//                     //     <span id="cart-item-price" class="cart-item-price" class="mb-0">${items[i].price}</span>
-//                     //     </div>
+                        <div class="item-text">
+                        <p id="cart-item-title" class="font-weight-bold mb-0">${items[i].name}</p>
+                        <span>$</span>
+                        <span id="cart-item-price" class="cart-item-price" class="mb-0">${items[i].price}</span>
+                        </div>
     
-//                     //     <a href="#" id='cart-item-remove' class="cart-item-remove">
-//                     //     <i class="fas fa-trash"></i>
-//                     //     </a>
+                        <a href="#" id='cart-item-remove' class="cart-item-remove">
+                        <i class="fas fa-trash"></i>
+                        </a>
     
-//                     // </div>`;
+                    </div>`;
     
-//                     // const cart = document.getElementById('cart');
-//                     // const total = document.querySelector('.cart-total-container');
+                    const cart = document.getElementById('cart');
+                    const total = document.querySelector('.cart-total-container');
     
-//                     // cart.insertBefore(cartItem, total);
-//                     // showTotals();
-//         }
-//     }
+                    cart.insertBefore(cartItem, total);
+                    showTotals();
+        }
+    }
     
 
-// }
+}
 
 
 // add items to cart
 (function(){
 
     const cartBtn = document.querySelectorAll('.store-item-icon');
-    
+    items = [];
 
     // cart button
     cartBtn.forEach(function(btn){
         btn.addEventListener('click', function(event){
             if(event.target.parentElement.classList.contains('store-item-icon')){
+                
                 let fullPath = event.target.parentElement.previousElementSibling.src;
                 let pos = fullPath.indexOf("img") + 3;
                 let partPath = fullPath.slice(pos);
@@ -119,10 +121,12 @@ let items = [];
                 if(localStorage.getItem('items')){
                     items = JSON.parse(localStorage.getItem('items'));
                 }
-                // items.push({'items' : name, image : imagePath, price : finalPrice, total : totals[0], numOfItems : totals[1]});
+                
                 items.push({'name' : name, 'image' : imagePath, 'price' : finalPrice});
                 localStorage.setItem('items', JSON.stringify(items));
             }
+            
+            // CreateCookie("itemslist",JSON.stringify(item),1);
 
             const removeBtn = document.getElementsByClassName('cart-item-remove');
         
@@ -186,7 +190,6 @@ function clearCart(){
     document.getElementById('cart-total').textContent = 0;
     document.querySelector('.item-total').textContent = 0;
     document.getElementById('item-count').textContent = 0;
-    showTotals();
 }
 
 
@@ -229,6 +232,7 @@ let stripeHandler = StripeCheckout.configure({
 function purchaseClicked(){
     let priceElement = document.getElementsByClassName('item-total'[0]);
     let price = parseFloat(priceElement.innerHTML);
+    console.log(price);
     stripeHandler.open({
         amount : price
     })

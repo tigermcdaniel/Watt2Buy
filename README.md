@@ -1,16 +1,14 @@
-"# WATT2Buy" 
+This is the read me file
 
-VanBran
-TeamName: Watt2Buy
-VanBran
+Changed by Hung
+=======
+Changed by Hung Bui
+Changed by Kunal
+<<<<<<< HEAD
 
-TeamName: Watt2Buy
-
-Project Team Members:
-
-Vanessa Van Scyoc Hernandez
-Hung Bui
-VanBran
-Kunal Sinha
-Simon
-Tiger
+Reviewed by Vanessa V
+=======
+Changed by Simon  
+Reviewed by Vanessa V
+Also Reviewed by Simon
+>>>>>>> d868b9ebc758faba996e1107931bfd898454f043

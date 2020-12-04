@@ -106,8 +106,6 @@ app.get('/nodejs/login', function(req, res) {
 });
 
 app.get('/nodejs/saveResults', function(req, res) {
-
-    
     var results = req.query.results;
     var userName = req.query.username;
     
@@ -115,6 +113,26 @@ app.get('/nodejs/saveResults', function(req, res) {
                  +",'" + "results" + "','" + results +  "');";
 
 
+	db.task('get-everything', task => {
+        return task.batch([
+            task.any(insert_statement),
+        ]);
+    })
+    .then(info => {
+        //req.session.loggedIn = true;
+        res.status(200).end();
+    })
+    .catch(error => {
+        // display error message in case an error
+        res.status(500).send(error);
+        console.log(error);
+    });
+});
+
+app.get('/nodejs/subscribe', function(req, res) {
+    var email = req.query.email;
+
+    var insert_statement = "INSERT INTO public.\"SUBSCRIBERS\"(email) VALUES('" + email + "');";
 	db.task('get-everything', task => {
         return task.batch([
             task.any(insert_statement),

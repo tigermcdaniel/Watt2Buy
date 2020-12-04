@@ -1,6 +1,6 @@
 function saveResults(){
     var userName = document.getElementById("username");
-    var results;
+    var results = document.getElementById("Survey_Results");
 
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "/nodejs/saveResults?userName="+userName+"&results="+results, false);

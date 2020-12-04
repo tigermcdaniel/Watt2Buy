@@ -21,6 +21,7 @@ var resultNissan = "<div style='width: 33%;'><div class='card'><img class='card-
 var resultHummer = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/HummerEV2.jpg'><div class='card-body'><h3 class='card-title'>GMC Hummer EV</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost:  $79,995</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 
 var title='<h1 class="jumbotron-heading">Results</h1><div class= "row"><div id="message"></div>'
+var userButton='<br><br><div class="form-group" align="center"><label for="articleTitle"><p>Save Results:</p> <input type="text" class="form-control" id="budget" placeholder="Enter username" align="center" style="width: 300px;" > <a class="btn btn-primary btn-lg" onclick="saveResults()" role="button" style="color:white">Save</a></label></div>';
 
 function resultCalc(){
 
@@ -31,34 +32,36 @@ function resultCalc(){
   console.log(inSolarInt);
   console.log (inEVInt);
 
-  //if budget is too small, give appliances
+  //if budget is too small, give appliances ******************
   if (inBudget <=4000){
+    document.getElementById("Survey_Results").innerHTML = title+ resultTherm + resultShade + resultLight+'</div>'+userButton;
     document.getElementById("message").innerHTML = budgetAppMessage;
-    document.getElementById("Survey_Results").innerHTML = title+ resultTherm + resultShade + resultLight+'</div>';
   }
   //if interest in solar or EV, go to function
-  else if(inSolarInt== "yes" | inEVInt== "yes"){
+  else if(inSolarInt== "on" | inEVInt== "on"){
   console.log("go to decideInterst");
   decideInterest();
    }
    //if not interested in other main products, recommend appliances
   else {
     console.log("No interest");
-    document.getElementById("Survey_Results").innerHTML = title+resultTherm + resultShade + resultLight+'</div>';
+    document.getElementById("Survey_Results").innerHTML = title+resultTherm + resultShade + resultLight+'</div>'+userButton;
   }
 }
 
 
 function decideInterest(){
   var inBudget = document.getElementById("budget").value;
-  var inSolarInt = document.getElementById("solarInt").value;
-  var inEVInt = document.getElementById("EVInt").value;
+  var inSolarInt = document.getElementById("solarInt");
+  var inEVInt = document.getElementById("EVInt");
   console.log(inSolarInt);
   console.log (inEVInt);
+  console.log("deciding...");
 
-  if(inSolarInt== "on" & inEVInt== "on"){
+  if(inSolarInt.checked && inEVInt.checked){
     console.log("in Both");
     if(inBudget<32000){
+      document.getElementById("Survey_Results").innerHTML = title+'</div>';
       document.getElementById("message").innerHTML = budgetEVMessage;
       console.log("go to calcSolar");
       calcSolar();
@@ -69,24 +72,25 @@ function decideInterest(){
     }
   }
   //just solar
-  else if (inSolarInt=="on"){
-    console.log("calcSolar");
-    calcSolar();
-  }
-  else{//(inEVInt=="yes")
-    if(inBudget< 32000){
-      document.getElementById("message").innerHTML = budgetMessage;
-      document.getElementById("Survey_Results").innerHTML = title+resultNissan + resultTesla + resultHummer+'</div>';
-    }
-    else {
+  else if (inSolarInt.checked || inEVInt.checked){
+    if(inSolarInt.checked){
+      console.log("calcSolar");
+      calcSolar()
+    } else{
       console.log("go to calcEV");
       calcEV();
+      if(inBudget< 32000){
+        document.getElementById("Survey_Results").innerHTML = title+resultNissan + resultTesla + resultHummer+'</div>'+userButton;
+        document.getElementById("message").innerHTML = budgetMessage;
+      }
     }
+    
   }
 }
 
 
 function calcBoth(){
+  console.log("in Both Solar and EV");
   var inFreeSpace = document.getElementById("freeSpace").value;
   var inRoof = document.getElementById("roofingType").value;
   var inTruck = document.getElementById("truckBed").value;
@@ -94,51 +98,53 @@ function calcBoth(){
 
 function calcEV(){
   console.log("in calcEV");
-  var inTruck = document.getElementById("truckBed").value;
+  var inTruck = document.getElementById("truckBed");
   var inBudget = document.getElementById("budget").value;
-  if (inTruck == "on"){
+  if (inTruck.checked){
     console.log ("Test in truckBed");
     //check if budget is sufficient for hummer, if not still give suggestion but state it can be a long term goal
     if (inBudget<79000){
-        document.getElementById("message").innerHTML = budgetMessage;
+      document.getElementById("Survey_Results").innerHTML = title+'</div>'+userButton;
+      document.getElementById("message").innerHTML = budgetMessage;
     }
-    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultHummer + "</div>"+'</div>';// we could just have the one rec of the hummer with nothing else
+    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultHummer + "</div>"+'</div>'+userButton;// we could just have the one rec of the hummer with nothing else
   }
   else if(inBudget>44000){
-    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTesla + resultNissan + "</div>"+'</div>';
+    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTesla + resultNissan + "</div>"+'</div>'+userButton
   }
   else{
-    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultNissan + "</div>"+'</div>';
+    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultNissan + "</div>"+'</div>'+userButton;
   }
 
 }
 
 function calcSolar(){
-  var inFreeSpace = document.getElementById("freeSpace").value;
-  var inRoof = document.getElementById("roofingType").value;
+  var inFreeSpace = document.getElementById("gardenAvail");
+  var inRoof = document.getElementById("clay");
   var inBudget = document.getElementById("budget").value;
-
-  if(inFreeSpace=="yes"){
-    if (inRoof=="clay"){
-    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultRoof + resultGarden + "</div>"+'</div>';
+  console.log("in calcSolar");
+  if(inFreeSpace.checked){
+    if (inRoof.checked){
+    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultRoof + resultGarden + "</div>"+'</div>'+userButton;
     }
     else{//inRoof=="no"
+      document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTiles + resultGarden + "</div>"+'</div>'+userButton;
       if(inBudget<31000){
         document.getElementById("message").innerHTML = budgetTilesMessage;
       }
-      document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTiles + resultGarden + "</div>"+'</div>';
-    }
+      }
   }
 
   else{//inFreeSpace=="no"
-    if (inRoof=="clay"){
-    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultRoof + "</div>"+'</div>';
+    if (inRoof.checked){
+    document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultRoof + "</div>"+'</div>'+userButton;
     }
     else{//inRoof=="no"
+      document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTiles + "</div>"+'</div>'+userButton;
       if(inBudget<31000){
         document.getElementById("message").innerHTML = budgetTilesMessage;
       }
-      document.getElementById("Survey_Results").innerHTML = title+"<div class='col d-flex justify-content-center'>" + resultTiles + "</div>"+'</div>';
+      
     }
   }
 }

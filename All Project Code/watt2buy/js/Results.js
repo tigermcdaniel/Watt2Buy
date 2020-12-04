@@ -21,7 +21,7 @@ var resultNissan = "<div style='width: 33%;'><div class='card'><img class='card-
 var resultHummer = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/HummerEV2.jpg'><div class='card-body'><h3 class='card-title'>GMC Hummer EV</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost:  $79,995</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
 
 var title='<h1 class="jumbotron-heading">Results</h1><div class= "row"><div id="message"></div>'
-var userButton='<br><br><div class="form-group" align="center"><label for="articleTitle"><p>Save Results:</p> <input type="text" class="form-control" id="budget" placeholder="Enter username" align="center" style="width: 300px;" > <a class="btn btn-primary btn-lg" onclick="saveResults()" role="button" style="color:white">Save</a></label></div>';
+var userButton='<br><br><div class="form-group" align="center"><label for="articleTitle"><p>Save Results:</p> <input type="text" class="form-control" id="username" placeholder="Enter username" align="center" style="width: 300px;" > <a class="btn btn-primary btn-lg" onclick="saveResults()" role="button" style="color:white">Save</a></label></div>';
 
 function resultCalc(){
 

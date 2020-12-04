@@ -105,4 +105,30 @@ app.get('/nodejs/login', function(req, res) {
     });
 });
 
+app.get('/nodejs/saveResults', function(req, res) {
+
+    
+    var results = req.query.results;
+    var userName = req.query.username;
+    
+    var insert_statement = "INSERT INTO RESULTS(userName, results) VALUES('" + userName + "','"
+                 +",'" + "results" + "','" + results +  "');";
+
+
+	db.task('get-everything', task => {
+        return task.batch([
+            task.any(insert_statement),
+        ]);
+    })
+    .then(info => {
+        //req.session.loggedIn = true;
+        res.status(200).end();
+    })
+    .catch(error => {
+        // display error message in case an error
+        res.status(500).send(error);
+        console.log(error);
+    });
+});
+
 app.listen(3000);

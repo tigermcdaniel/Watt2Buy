@@ -183,10 +183,10 @@ let items = [];
 function clearCart(){
    
     document.querySelectorAll('.cart-item').forEach(e => e.remove());
-    showTotals();
     document.getElementById('cart-total').textContent = 0;
     document.querySelector('.item-total').textContent = 0;
     document.getElementById('item-count').textContent = 0;
+    showTotals();
 }
 
 

@@ -79,6 +79,10 @@ let items = [];
                 finalPrice = Number(finalPrice.replace(/[^0-9\.-]+/g,""));
                 item.price = finalPrice;
 
+                // get id for checkout
+                let shopItem = event.target.parentElement.parentElement.parentElement.parentElement;
+                let id = shopItem.dataset.itemId;
+
                 // console.log(partPath);
                 // console.log(name);
                 // console.log(price);
@@ -86,6 +90,7 @@ let items = [];
 
 
                 const cartItem = document.createElement('div');
+                cartItem.dataset.itemId = id;
                 cartItem.classList.add('cart-item', 'd-flex', 'justify-content-between', 'text-capitalize', 'my-3');
                 cartItem.innerHTML = `
                     <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
@@ -132,11 +137,7 @@ let items = [];
             }
 
 
-            const clearCartBtn = document.getElementById('clear-cart');
-            clearCartBtn.addEventListener('click',function(event){
-                let cartItems = document.querySelectorAll('.cart-item');
-                cartItems.remove();
-            })
+           
 
         })
     })
@@ -177,3 +178,55 @@ let items = [];
 
 })();
 
+
+
+function clearCart(){
+   
+    document.querySelectorAll('.cart-item').forEach(e => e.remove());
+    showTotals();
+}
+
+
+let stripeHandler = StripeCheckout.configure({
+    key : stripePublicKey,
+    locale : 'en',
+    token : function(token) {
+        // console.log(token);
+        var pur_items = [];
+        // var cartItemContainer = document.getElementsByClassName('cart')[0];
+        var cartRows = document.getElementsByClassName('cart-item');
+        for(var i = 0; i < cartRows.length; i++){
+            var cartRow = cartRows[i];
+            var id = cartRow.dataset.itemId;
+            pur_items.push({
+                id: id
+            })
+        }
+
+        fetch('/purchase', {
+            method : 'POST',
+            headers : {
+                'Content-Type' : 'application/json',
+                'Accept' : 'application/json'
+            },
+            body : JSON.stringify({
+                stripeTokenId : token.id,
+                items : pur_items
+            })
+        }).then(function(res){
+            return res.json();
+        }).then(function(data){
+            alert(data.message);
+            clearCart();
+        }).catch(function(error){
+            console.error(error);
+        })
+    }
+})
+function purchaseClicked(){
+    let priceElement = document.getElementsByClassName('item-total'[0]);
+    let price = parseFloat(priceElement.innerHTML);
+    stripeHandler.open({
+        amount : price
+    })
+}

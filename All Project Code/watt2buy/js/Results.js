@@ -28,7 +28,7 @@ var resultTiles= "<div style='width: 33%;'>\
 var resultTiles2=                                                      " months</li>\
                       </ul>\
                       <ul class='list-group list-group-flush'>\
-                        <li class='list-group-item'>Energy Produced (Limit):" 
+                        <li class='list-group-item'>Energy Produced (Limit): " 
 var resultTiles3=                                                      " kW/month</li>\
                       </ul>\
                       <a href='#' class='btn btn-primary'>Add to Cart</a>\
@@ -42,7 +42,7 @@ var resultRoof= "<div style='width: 33%;'>\
                         <p class='card-text'>Go to option for new solar investors as one can produce their own energy without requiring land space.</p>\
                       </div>\
                       <ul class='list-group list-group-flush'>\
-                        <li class='list-group-item'>Investment Cost: $5,18</li>\
+                        <li class='list-group-item'>Investment Cost: $5,185</li>\
                       </ul>\
                       <ul class='list-group list-group-flush'>\
                         <li class='list-group-item'>Time taken for ROI: "
@@ -204,12 +204,12 @@ function calcSolar(){
       mon_dni = (ann_dni*31); // kw/m^2/month
 
       //tiles
-      time1 =  Math.trunc(5185/parseInt(document.getElementById("expend").value)); // time for roi 1
-      eLim1 =  Math.trunc((mon_dni*16*0.22)); //1
+      time1 =  Math.trunc(31133/parseInt(document.getElementById("expend").value)); // time for roi 1
+      eLim1 =  Math.trunc((mon_dni*16*0.30)); //1
 
       //roof
-      time2 =  Math.trunc(31133/parseInt(document.getElementById("expend").value)); // time for roi 2
-      eLim2 =  Math.trunc((mon_dni*16*0.30)); //2
+      time2 =  Math.trunc(5185/parseInt(document.getElementById("expend").value)); // time for roi 2
+      eLim2 =  Math.trunc((mon_dni*16*0.22)); //2
       
       //garden
       time3 =  Math.trunc(4875/parseInt(document.getElementById("expend").value)) // time for roi 3

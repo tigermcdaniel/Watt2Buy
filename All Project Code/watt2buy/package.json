@@ -2,10 +2,14 @@
     "name": "node-ejs",
     "main": "server.js",
     "dependencies": {
-        "ejs": "^2.5.5",
-        "ejs-lint": "^0.3.0",
-        "express": "^4.6.1",
+        "ejs": "^2.7.4",
+        "ejs-lint": "^1.1.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
         "pg-promise": "^8.5.1",
-        "express-session": "^1.17.1"
+        "stripe": "^8.127.0"
+    },
+    "devDependencies": {
+        "dotenv": "^8.2.0"
     }
 }

@@ -7,6 +7,7 @@
 ***********************/
 var express = require('express'); //Ensure our express framework has been added
 const session = require('express-session');
+const app = express();
 var app = express();
 
 app.set('trust proxy', 1)

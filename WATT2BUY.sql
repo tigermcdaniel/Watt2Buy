@@ -11,13 +11,15 @@ CREATE TABLE public."USER" (
   PRIMARY KEY (userName)
 );
   
-CREATE TABLE RESULTS (
+CREATE TABLE public."RESULTS" (
   userName VARCHAR(50),
-  results VARCHAR(255) NOT NULL,
+  results VARCHAR(5000) NOT NULL,
   PRIMARY KEY (userName)
 );
   
-  
+CREATE TABLE public."SUBSCRIBERS" (
+  email VARCHAR(50),
+);
   
   CREATE TABLE PRODUCT (
   id INT NOT NULL AUTO_INCREMENT,

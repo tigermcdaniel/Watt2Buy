@@ -9,9 +9,9 @@ var budgetEVMessage = "<h5> You don't have sufficent funding for an Electrical V
 var budgetTilesMessage = "<p> Note: You don't have sufficent funding for Solar Tile Roofing, but we recommend it as a future investment once you have enough funding.</p><br><br>";
 
 // Electrical appliances
-var resultTherm= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartTherm.jpg'><div class='card-body'><h3 class='card-title'>Smart Thermostat</h3><p class='card-text'>Google Nest Thermostat 3rd Generation is a programmable smart thermostat that learns your schedule and the temperatures you like and programs itself to help you save energy and stay comfortable.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $199.99</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
-var resultShade= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartShades.JPG'><div class='card-body'><h3 class='card-title'>Smart Shades</h3><p class='card-text'>MySmartRollerShades are the smartest, Bluetooth-enabled roller shades for interior windows. include a solar charging panel so you never have to plug them in.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $399.00</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
-var resultLight= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartLighting.jpg'><div class='card-body'><h3 class='card-title'>Smart Lighting</h3><p class='card-text'>Each kit contains 4 Philips Hue White A19 60W Energy Star Certified LED Smart bulbs. Bulbs can be controlled remotely with the Philips Hue App or voice activated with Alexa.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $99.99</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
+var resultTherm= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartTherm.jpg'><div class='card-body'><h3 class='card-title'>Smart Thermostat</h3><p class='card-text'>Google Nest Thermostat 3rd Generation is a programmable smart thermostat that learns your schedule and the temperatures you like and programs itself to help you save energy and stay comfortable.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $199.99</li></ul> </div></div>";
+var resultShade= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartShades.JPG'><div class='card-body'><h3 class='card-title'>Smart Shades</h3><p class='card-text'>MySmartRollerShades are the smartest, Bluetooth-enabled roller shades for interior windows. include a solar charging panel so you never have to plug them in.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $399.00</li></ul> </div></div>";
+var resultLight= "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/smartLighting.jpg'><div class='card-body'><h3 class='card-title'>Smart Lighting</h3><p class='card-text'>Each kit contains 4 Philips Hue White A19 60W Energy Star Certified LED Smart bulbs. Bulbs can be controlled remotely with the Philips Hue App or voice activated with Alexa.</p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $99.99</li></ul> </div></div>";
 
 // Solar Solutions
 var resultTiles= "<div style='width: 33%;'>\
@@ -31,7 +31,7 @@ var resultTiles2=                                                      " months<
                         <li class='list-group-item'>Energy Produced (Limit): " 
 var resultTiles3=                                                      " kW/month</li>\
                       </ul>\
-                      <a href='#' class='btn btn-primary'>Add to Cart</a>\
+                       \
                     </div>\
                   </div>";
 
@@ -52,7 +52,7 @@ var resultRoof2=                                                      " months</
                         <li class='list-group-item'>Energy Produced (Limit): " 
 var resultRoof3=                                                      " kW/month</li>\
                       </ul>\
-                      <a href='#' class='btn btn-primary'>Add to Cart</a>\
+                       \
                     </div>\
                   </div>";
 
@@ -73,14 +73,14 @@ var resultGarden2=                                                      " months
                         <li class='list-group-item'>Energy Produced (Limit): " 
 var resultGarden3=                                                      " kW/month</li>\
                       </ul>\
-                      <a href='#' class='btn btn-primary'>Add to Cart</a>\
+                       \
                     </div>\
                   </div>";
 
 // Electric Vehicles
-var resultTesla = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/teslaModel3.jpg'><div class='card-body'><h3 class='card-title'>Tesla Model 3</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $44,500</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
-var resultNissan = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/nissanLeaf.jpg'><div class='card-body'><h3 class='card-title'>Nissan Leaf</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $31,600</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
-var resultHummer = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/HummerEV2.jpg'><div class='card-body'><h3 class='card-title'>GMC Hummer EV</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost:  $79,995</li></ul><a href='#' class='btn btn-primary'>Add to Cart</a></div></div>";
+var resultTesla = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/teslaModel3.jpg'><div class='card-body'><h3 class='card-title'>Tesla Model 3</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $44,500</li></ul> </div></div>";
+var resultNissan = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/nissanLeaf.jpg'><div class='card-body'><h3 class='card-title'>Nissan Leaf</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost: $31,600</li></ul> </div></div>";
+var resultHummer = "<div style='width: 33%;'><div class='card'><img class='card-img-top' src='./img/HummerEV2.jpg'><div class='card-body'><h3 class='card-title'>GMC Hummer EV</h3><p class='card-text'></p></div><ul class='list-group list-group-flush'><li class='list-group-item'>Investment Cost:  $79,995</li></ul> </div></div>";
 
 // title and save results
 var title='<h1 class="jumbotron-heading">Results</h1><div class= "row"><div id="message"></div>'

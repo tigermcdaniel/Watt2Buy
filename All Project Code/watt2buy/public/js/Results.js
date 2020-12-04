@@ -148,6 +148,8 @@ function decideInterest(){
       }
     }
     
+  } else{
+    document.getElementById("Survey_Results").innerHTML = title+resultTherm + resultShade + resultLight+'</div>'+userButton;
   }
 }
 

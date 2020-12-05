@@ -7,7 +7,7 @@
 ***********************/
 
 if(process.env.NODE_ENV !== 'production'){
-    require('dotenv').config();
+    //require('dotenv').config();
 }
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY;
@@ -87,7 +87,7 @@ app.get('/signup', function(req, res) {
 app.get('/login', function(req, res) {
 	res.render('pages/login',{
         local_css: "signup.css",
-        local_js: "", 
+        local_js: "login.js", 
 		my_title:"Login Page"
 	});
 });
@@ -271,5 +271,3 @@ app.get('/nodejs/subscribe', function(req, res) {
         console.log(error);
     });
 });
-
-app.listen(3000);

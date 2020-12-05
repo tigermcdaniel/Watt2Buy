@@ -30,7 +30,7 @@ function login(){
 
     console.log(userName + " Logged in.");
     //redirect the user after they have logged in 
-    window.location.href = '/index.html';
+    window.location.href = '/index';
 }
 
 function onSignIn(googleUser) {

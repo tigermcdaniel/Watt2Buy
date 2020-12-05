@@ -36,7 +36,7 @@ function AddUser(){
     }
 
     //redirect the user after they have logged in 
-    window.location.href = '/index.html';
+    window.location.href = '/index';
     console.log("past href");
 }
 

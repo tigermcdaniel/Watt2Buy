@@ -114,7 +114,7 @@ app.get('/results', function(req, res) {
 app.get('/contactForm', function(req, res) {
 	res.render('pages/contactForm',{
         local_css: "contactForm.css",
-        local_js: "", 
+        local_js: "contactForm.js", 
 		my_title:"Contact Form"
 	});
 });
@@ -256,6 +256,30 @@ app.get('/nodejs/subscribe', function(req, res) {
     var email = req.query.email;
 
     var insert_statement = "INSERT INTO public.\"SUBSCRIBERS\"(email) VALUES('" + email + "');";
+	db.task('get-everything', task => {
+        return task.batch([
+            task.any(insert_statement),
+        ]);
+    })
+    .then(info => {
+        //req.session.loggedIn = true;
+        res.status(200).end();
+    })
+    .catch(error => {
+        // display error message in case an error
+        res.status(500).send(error);
+        console.log(error);
+    });
+});
+
+app.get('/nodejs/contactForm', function(req, res) {
+    var name = req.query.name;
+    var email = req.query.email;
+    var phoneNumber = req.query.phoneNumber;
+    var subject = req.query.subject;
+    var message = req.query.message;
+
+    var insert_statement = "INSERT INTO public.\"contactForm\"(name, email, \"phoneNumber\", subject, message) VALUES('" + name + "', '" + email + "', '" + phoneNumber + "', '" + subject + "', '" + message + "');";
 	db.task('get-everything', task => {
         return task.batch([
             task.any(insert_statement),

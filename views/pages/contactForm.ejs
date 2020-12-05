@@ -52,26 +52,26 @@
         <form method="post" action="" class="ccform">
         <div class="ccfield-prepend">
             <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
-            <input class="ccformfield" type="text" placeholder="Full Name" required>
+            <input id="name" class="ccformfield" type="text" placeholder="Full Name" required>
         </div>
         <div class="ccfield-prepend">
             <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
-            <input class="ccformfield" type="text" placeholder="Email" required>
+            <input id="email" class="ccformfield" type="text" placeholder="Email" required>
         </div>
         <div class="ccfield-prepend">
             <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
-            <input class="ccformfield" type="text" placeholder="Phone">
+            <input id="phone" class="ccformfield" type="text" placeholder="Phone">
         </div>
         <div class="ccfield-prepend">
             <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
-            <input class="ccformfield" type="text" placeholder="Subject" required>
+            <input id="subject" class="ccformfield" type="text" placeholder="Subject" required>
         </div>
         <div class="ccfield-prepend">
             <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
-            <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+            <textarea id="message" class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
         </div>
         <div class="ccfield-prepend">
-            <input class="ccbtn" type="submit" value="Submit">
+            <input onclick="submitForm()" class="ccbtn" type="reset" value="Submit">
         </div>
         </form>
     </div>

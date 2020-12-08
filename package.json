@@ -7,7 +7,8 @@
         "express": "^4.17.1",
         "pg-promise": "^10.8.1",
         "express-session": "^1.17.1",
-        "stripe": "^8.127.0"
+        "stripe": "^8.127.0",
+        "dotenv": "^8.2.0"
     },
     "scripts": {
         "lint": "ejslint ."

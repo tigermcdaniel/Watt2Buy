@@ -7,7 +7,7 @@
 ***********************/
 
 if(process.env.NODE_ENV !== 'production'){
-    //require('dotenv').config();
+    require('dotenv').config();
 }
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY;
@@ -64,6 +64,15 @@ const server = app.listen(PORT, () => {
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/'));//This line is necessary for us to use relative paths and access our resources directory
 
+
+// home: index page
+app.get('/', function(req, res) {
+	res.render('pages/index',{
+        local_css: "",
+        local_js: "subscribe.js", 
+		my_title:"Home Page"
+	});
+});
 
 // home: index page
 app.get('/index', function(req, res) {

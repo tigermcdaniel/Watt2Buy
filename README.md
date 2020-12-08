@@ -10,9 +10,11 @@ To run the website, please go to https://watt2buy.herokuapp.com/
 
 Or you can run it locally by:
 1) Download the latest version of our project. 
-2) Import the database (Postgres SQL).
+2) Import the database (Postgres SQL) and install the tables in your editor of choice.
 3) Line 104 of server.js, change to your Postgres SQL password. 
 4) Install NodeJS on your computer. 
-5) Type: "node server.js" on your terminal
-6) Open Chrome/Firefox/Edge, enter "localhost:3000".
+5) Type 'npm install' into your git reposiotry terminal. 
+    This will insall all necessary dependencies to run the project. 
+6) Type: "node server.js" on your terminal or start a node.js debugger in the server.js file.
+7) Navigate Chrome/Firefox/Edge, enter "localhost:8080".
 

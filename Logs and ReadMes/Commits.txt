@@ -1,0 +1,805 @@
+commit 1597edf79441ef3573f3fe4ac9925fc253f85af3
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 07:26:00 2020 -0700
+
+    Fixed Navbar
+
+commit bcca6d3ec8cc8900a1da9e79361d10710e77f54e
+Merge: 808af66 c8742e2
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Dec 4 06:46:48 2020 -0700
+
+    Merge branch 'master' of https://github.com/CSCI-3308-CU-Boulder/WATT2Buy
+
+commit 808af66c12c6d31fb4714dc2c22c27a060b090e2
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Dec 4 06:46:13 2020 -0700
+
+    Removed Add to Cart Button
+
+commit 5c9eb1f47a68192847581238e843c90db4f2b73d
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Dec 4 06:45:51 2020 -0700
+
+    Navbar Changes Services -> Products
+
+commit c8742e215a500ada0aa8bf6f53f459ad10917aa0
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 06:29:43 2020 -0700
+
+    fix Clear All Shopping Cart
+
+commit bdf195f4a36a79b58881b82d2429e835394985c1
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 06:22:40 2020 -0700
+
+    Finished Checkout ver1
+
+commit 66a4d78ec74663fb92e15f9ff5d78adb33476c5d
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 06:21:01 2020 -0700
+
+    Finished Checkout
+
+commit 19e38a08b1f48948111559686e099af7cc3003e6
+Merge: fbae5ed b512544
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 06:19:08 2020 -0700
+
+    Merge branch 'master' of https://github.com/CSCI-3308-CU-Boulder/WATT2Buy into master
+
+commit fbae5ed1197b9bcb7596afb6deb3d0eaa61d9d63
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 06:16:54 2020 -0700
+
+    Finished Checkout
+
+commit ca73be23b03340ca155830d52720a3d991bf54df
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 06:15:07 2020 -0700
+
+    Hung: Finish Checkout for Shopping Cart
+
+commit b51254402ee87e36627c60adcec2dbff51b6bd6c
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Dec 4 05:58:15 2020 -0700
+
+    Update Results.js
+
+commit cf1f1c5de31682284c82a581f7b75539aec49f85
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Dec 4 05:45:31 2020 -0700
+
+    Added API Calculations
+    
+    Changed survey.html and Results.js to add NREL Solar Resource data API data calculations.
+
+commit babe414d1dd9ec0054cae4341c9fef54a46d9db2
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Dec 4 05:43:16 2020 -0700
+
+    Update README.md
+
+commit 358fbc0d7c0eca5048ae9ed9260030f6ebd5cc14
+Merge: b00451b cccd9bf
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 04:02:09 2020 -0700
+
+    Merge branch 'master' of https://github.com/CSCI-3308-CU-Boulder/WATT2Buy into master
+
+commit b00451bf933a8a5e407f06b701ee8b8e180f43dc
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Dec 4 04:01:51 2020 -0700
+
+    Shopping: Add + Remove Items, Missing Checkout + Clear Cart
+
+commit cccd9bff8524cd7e1503f45f2005a68a9708ec84
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Dec 3 21:42:57 2020 -0800
+
+    user may save results to database
+
+commit 5323943c0f93e9127dd9dab5e4b3c49cce2619b0
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Dec 3 21:37:38 2020 -0800
+
+    updated
+
+commit 78b312add7b811e04ed9765f0eba202006c342df
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Dec 3 21:13:22 2020 -0800
+
+    subscribers saved to databse
+
+commit 8b36e26d023b245669fd3c28cc810a8bc649cd03
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Dec 3 21:26:05 2020 -0700
+
+    Wait now its done- Simon
+
+commit 8272f91bfcc2cd94b87ba0b2f042070d7fd5a1e0
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Dec 3 21:25:49 2020 -0700
+
+    Wait now its final -Simon
+
+commit 02802bfde17f4f5fb1c48b74de92c5161604a36d
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Dec 3 21:22:17 2020 -0700
+
+    Final Upload - Simon
+
+commit 330ca55c7caeea8bad7e7e6119f676fcaa8b67e2
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Dec 3 21:21:40 2020 -0700
+
+    Final Upload- Simon
+
+commit 0f30a09bcc694b6c077c64bff62d90dc8c7cc818
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Dec 3 19:35:17 2020 -0800
+
+    added survery.js router
+
+commit 0d077c35d4b41ecbede7302a2efe37ebe4ac8ffe
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Dec 3 19:04:09 2020 -0700
+
+    Simon- Final survey operations
+
+commit f42e550e8e4f4cf8304158ac5158161d3a67ea9b
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Dec 3 19:03:14 2020 -0700
+
+    Simon- finalish survey
+
+commit 8777913b01b47f5efa1511ae25b8f48e29360b78
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Dec 3 13:28:09 2020 -0800
+
+    Results added to database
+
+commit aee602da02d0ef3b7fd0861dc69ec2ce0e03f40e
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Wed Dec 2 17:56:25 2020 -0800
+
+    signup and login complete with database
+
+commit b004bd1c83822fba70ba88cd3b2a186906659858
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Wed Dec 2 17:38:14 2020 -0800
+
+    changed sql user table
+
+commit 1fd0eb04ebfe2f1154ddc8a8c31f74c1acd301af
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Wed Dec 2 17:37:05 2020 -0800
+
+    login working
+
+commit 4c44938a19e73e99f84edaefdd7475695129f93f
+Merge: 3945d13 0caa6f6
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Wed Dec 2 17:01:17 2020 -0800
+
+    Merge branch 'master' of https://github.com/CSCI-3308-CU-Boulder/WATT2Buy
+
+commit 0caa6f6acd923d2ca0d2a46b12af7eebbc219c50
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Wed Dec 2 18:00:33 2020 -0700
+
+    replacing Result.js with buttons and full functionality
+
+commit 3945d13f84d463cfe8b1a8d6f6da0baa5d97412c
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Wed Dec 2 16:57:07 2020 -0800
+
+    server.js
+
+commit 85abfcba95e57d299e512051af9955b79903bedf
+Merge: 4d4ad45 e350bd6
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Wed Dec 2 16:52:20 2020 -0800
+
+    Merge branch 'master' of https://github.com/CSCI-3308-CU-Boulder/WATT2Buy
+
+commit e350bd61ff8fc8a08baf8777ce30cd5e1410ea4e
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 16:17:39 2020 -0700
+
+    update -simon
+
+commit 530f5939afebf422f052e49e9447537211628b4f
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 16:17:06 2020 -0700
+
+    update- simon
+
+commit 8974552a1cfcd730d8d52f08a7f6139520adca16
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 15:50:40 2020 -0700
+
+    Update-simon
+
+commit 6617420e68a1264bac902fe060fbf396219d9b07
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 15:50:00 2020 -0700
+
+    update-simon
+
+commit 01986babd83b2f20bc7fd401b50976e163fd9a55
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 14:18:22 2020 -0700
+
+    Update -Simon (more coming)
+
+commit 99e454c319f25ddd7d1150aa326e272c0ed451ab
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 14:17:30 2020 -0700
+
+    Update -Simon (more coming)
+
+commit ad7cec42dc140288adca0defb5a28ff93aec8ff6
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 14:16:01 2020 -0700
+
+    Delete watt2buy.zip
+
+commit 039d301e3f72ab5f2b79ef8ca49cff1bb46f6206
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Wed Dec 2 14:15:45 2020 -0700
+
+    Update (more to come)
+
+commit 726816fbb050b487c79379f6e9e227038b3ed06f
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Wed Dec 2 14:11:55 2020 -0700
+
+    Result calculations update -Vanessa
+    
+    Budget, Applicances, just EV, and just Solar are fully functional.
+
+commit 4d4ad45e9ad03787ab64771ab7306b3aa3d9f50f
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Tue Dec 1 22:30:51 2020 -0800
+
+    Added Log in to database connection
+
+commit 4b4e148e8aa50fe3524810cb79931a95d16108e6
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Tue Dec 1 19:01:15 2020 -0700
+
+    Survey with question ids
+
+commit a170bd9a0c9efc6ed92e26ff061ab13cf389d70a
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Mon Nov 30 18:26:13 2020 -0700
+
+    Add price and descriptions of products -Vanessa
+
+commit a96a102811d42998b9d38e8e028d42af7fbeac1d
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 10:33:26 2020 -0700
+
+    Budget test added to Results.js -Vanessa
+    
+    Prints results correctly however there is an issue with reading values from the survey.
+    
+    Error message --Uncaught TypeError: Cannot read property 'value' of nullat budgetTest (Results.js:16)
+    Code line -- inBudget = document.getElementById("budget").value;
+    
+    Results.js was included at the bottom of both Survey and results.
+
+commit 340a9b4becf9bdb321af5a705e1814392fc31d12
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 09:37:12 2020 -0700
+
+    Update of results div -Vanessa
+    
+    To where results will be printed from js
+
+commit 3dce73415d79d6a730a5cc7b22e437d5d424b479
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 09:26:13 2020 -0700
+
+    Filler text for Products - Vanessa
+
+commit 69372e7f757034541a5cb74323d8e93a52f752bd
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 09:03:13 2020 -0700
+
+    Updated survey to include budget - Vanessa
+
+commit 551ff5897b399a0b172fbb6177a9708a693a7e59
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 08:55:33 2020 -0700
+
+    Update of Services-Vanessa
+
+commit 4ee6de93144db965b114a8b18b33add20a991464
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 08:43:02 2020 -0700
+
+    Product Image Upload-Vanessa
+
+commit 0d93a27a509a9ebc97cfebfc7d35006f1851ec7d
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 08:05:17 2020 -0700
+
+    Upload Resized product images - Vanessa
+
+commit 3c9771e5410a795c5412f48e94abbd6e2d624e7f
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 07:43:09 2020 -0700
+
+    Update services.html
+
+commit f8f0ec747c5c76f1187e9ba4325cb53bf42e43d5
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 07:41:47 2020 -0700
+
+    product image upload -Vanessa
+
+commit cbbd5179a1ab079b4f280cfc1655a293d2fa50dd
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Nov 20 07:25:01 2020 -0700
+
+    product image upload - Vanessa
+
+commit da3ed3bb046093e5ededa68d89a06995f1fee64e
+Author: Tiger McDaniel <34593443+tigermcdaniel@users.noreply.github.com>
+Date:   Tue Nov 17 18:35:05 2020 -0700
+
+    Add files via upload
+
+commit adf615d8e11883d69002668e428e5137b49ea53d
+Author: Tiger McDaniel <34593443+tigermcdaniel@users.noreply.github.com>
+Date:   Mon Nov 16 13:56:07 2020 -0700
+
+    Add files via upload
+
+commit 360dc2934777504e8aec2f674652e621ad55b7e5
+Author: Tiger McDaniel <34593443+tigermcdaniel@users.noreply.github.com>
+Date:   Mon Nov 16 13:55:40 2020 -0700
+
+    Create newfile
+
+commit 90727aec60da002f399d323a12704786f11c07ea
+Author: Tiger McDaniel <34593443+tigermcdaniel@users.noreply.github.com>
+Date:   Mon Nov 16 13:54:53 2020 -0700
+
+    Add files via upload
+
+commit d750c7c42b54292474649fd6b3677ace921c370d
+Author: Tiger McDaniel <34593443+tigermcdaniel@users.noreply.github.com>
+Date:   Mon Nov 16 13:54:27 2020 -0700
+
+    Delete lab4
+
+commit 4d6b458e42cddb669eebb190dd9755c2ea42cca4
+Author: Tiger McDaniel <34593443+tigermcdaniel@users.noreply.github.com>
+Date:   Mon Nov 16 13:52:48 2020 -0700
+
+    Create lab4
+
+commit c7e816b3d642f35c169112b224450c942dfe17d2
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Mon Nov 16 09:57:15 2020 -0700
+
+    Milestone 5 Upload -Vanessa
+
+commit 34cfdcd3f05071c827377087caa973af3d6c9ad9
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Fri Nov 13 00:59:00 2020 -0700
+
+    Create Results.js
+
+commit f972d537475e3353350d821f877eb5073d2fcd3b
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Fri Nov 13 00:55:34 2020 -0700
+
+    Update Results.html
+
+commit 2c932bf222e9219d4fad76453fdd5074d656eb4e
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Fri Nov 13 00:53:50 2020 -0700
+
+    Survey for Record when making database
+
+commit 04ac9309832865b2c08f401164ab4c01b9ea453d
+Author: tigermcdaniel <tiger.mcdaniel@me.com>
+Date:   Thu Nov 12 15:26:40 2020 -0700
+
+    added the sign up info routing to the databse
+
+commit c55d13f6bc977d6b05dc39a7e0d93f9953e5e12a
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Oct 30 22:31:45 2020 -0600
+
+    Milestone4 Upload -Vanessa
+
+commit a028e7cba400a051c8375b1a1dd3566618dc1598
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Oct 30 16:47:07 2020 -0600
+
+    Database Script & Model
+
+commit cbab99d38053d4faaa93aa8ccc01ee883469c923
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Oct 16 10:11:58 2020 -0600
+
+    HTML Home + Survey + Result + Shopping Cart + Sign Up + Contact + Database MODEL
+
+commit bf8130ea17542188774daf55ea01c2ea70b2e373
+Merge: 94fb3ec 5febfd0
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Oct 16 10:11:18 2020 -0600
+
+    Merge branch 'master' of https://github.com/CSCI-3308-CU-Boulder/WATT2Buy into master
+
+commit 94fb3ec453dee769baa0ee953a26af702db24701
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Fri Oct 16 10:10:53 2020 -0600
+
+    HTML Home + Survey + Result + Shopping Cart + Sign Up + Contact + Database MODEL
+
+commit 5febfd0bf4c987999f153610a011af38b12280f4
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Oct 16 10:05:55 2020 -0600
+
+    Uploaded Milestone 3-Vanessa
+
+commit 3a829b4dbbbe310e61dae18aacf86c574c675bbd
+Merge: 500618e 917ca0e
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Oct 16 05:52:41 2020 -0600
+
+    Merge pull request #7 from CSCI-3308-CU-Boulder/AddingSurvey
+    
+    Added Survey Page Code
+
+commit 917ca0efd94ac8887951bc9362ef22a4118e53cb
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Oct 16 05:50:27 2020 -0600
+
+    Added Survey Page Code
+    
+    added several pictures to img and changed the code for survey. Jss and saving data still to be added.
+
+commit 500618ee41e2e95a50a149d94bb6bd4d099a30be
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Thu Oct 15 20:47:27 2020 -0600
+
+    Added Login html -Vanessa
+
+commit d12f0c1404b5b5c37dd2dd2f75e3c36253897c24
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Thu Oct 15 20:44:32 2020 -0600
+
+    Personalized text -Vanessa
+
+commit f8e70d5a3fe285a0a029397dbc3642d148cff9c0
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Thu Oct 15 20:40:16 2020 -0600
+
+    Add files via upload
+
+commit e74cd79832bd63fc941e4d8c66d2d870502b42b0
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 20:27:09 2020 -0600
+
+    Update -Simon
+
+commit 34eb04a3dc5c85e9e636c61c69b386eeab7f322a
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 20:16:16 2020 -0600
+
+    Update - Simon
+
+commit 4a93695f30f46d8eadb75d6c883a721a8cfa8be3
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 19:34:35 2020 -0600
+
+    Update Nav Bar
+
+commit 41b1231ff36b61868e6229d26cf38709afcd0dbf
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 19:33:48 2020 -0600
+
+    Update Nav Bar
+
+commit 2a856d0572fd2207e353a08d0bd8f0e4ea19ab01
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 19:33:03 2020 -0600
+
+    Update Nav Bar
+
+commit dd683e46c9b533cde05b547aa2597483a1d464a8
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 19:01:01 2020 -0600
+
+    Delete ZIP (accidentally added)
+
+commit f054cc51bd0e05a61f491002b8feb8c45f0cd25b
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 18:59:38 2020 -0600
+
+    Update -Simon
+
+commit 6b7885fdabd0cc0772460345d5d57c581bf4efa8
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Oct 15 18:58:21 2020 -0600
+
+    Updated Results page
+
+commit 8c86d8e55d79ef0a66e6fa6f960fc38f883ab37f
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Oct 15 14:05:16 2020 -0600
+
+    added contactForm
+
+commit fdacdeb221dd99ae46a9a662fa27011c3462e6c4
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Oct 15 14:03:59 2020 -0600
+
+    added a 'contact us' page
+
+commit 94bbe7259cf18c3e1e210ee68ad68ea64ac435e1
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Thu Oct 15 13:33:47 2020 -0600
+
+    added the services and survey pages skeleton
+
+commit d21b9b64f78396c749f54c48d645b0c2b6dd8589
+Author: Hung Bui <hubu6266@colorado.edu>
+Date:   Mon Oct 12 10:00:40 2020 -0600
+
+    Home, Shopping Cart, SIgn Up (All Responsive)
+
+commit 9339f337f19cbe6b8b5b34f5566c0ad5e4bd9254
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Sep 25 19:30:51 2020 -0600
+
+    Adding Project Milestone 2
+
+commit ac44c17b0a6ef09689a992961d12f6fb999c3916
+Merge: 214ae0c d868b9e
+Author: vava3772 <vava3772@colorado.edu>
+Date:   Thu Sep 24 22:33:58 2020 -0600
+
+    Lab4 edits to ReadMe.md
+
+commit 214ae0c768e1f5b0a14c8d7f184d147b4b4a8007
+Author: vava3772 <vava3772@colorado.edu>
+Date:   Thu Sep 24 22:29:20 2020 -0600
+
+    Lab4 changes to ReadMe.md
+
+commit d868b9ebc758faba996e1107931bfd898454f043
+Merge: 35966db bf9379e
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Sep 24 18:15:05 2020 -0600
+
+    Merge pull request #6 from CSCI-3308-CU-Boulder/SimonBranch
+    
+    I made some changes -Simon
+
+commit bf9379e1d808001c3b0af0ac5a3bb4dbeaaf851c
+Author: siju9917 <51030092+siju9917@users.noreply.github.com>
+Date:   Thu Sep 24 18:14:17 2020 -0600
+
+    Update ReadMe.md
+
+commit 67b4cf97db9a4ead743cb4a06f08c62be6434546
+Author: siju9917 <siju9917@colorado.edu>
+Date:   Thu Sep 24 18:07:47 2020 -0600
+
+    message
+
+commit e1f7e9107049295eb0e7c2f8b0d6831bf0da62d1
+Author: Simon <simon@simons-MacBook-Pro.local>
+Date:   Thu Sep 24 18:04:46 2020 -0600
+
+    message
+
+commit 35966db9d8d62ee27f36b599f749680f92375b80
+Merge: 32d200a a7ab7ef
+Author: hubu6266 <70331435+hubu6266@users.noreply.github.com>
+Date:   Thu Sep 24 17:18:18 2020 -0600
+
+    Merge pull request #1 from CSCI-3308-CU-Boulder/VanBran
+    
+    update README
+
+commit a7ab7efc8e67e7ce6c37f4395d63e7505a1b596e
+Merge: b8750b9 32d200a
+Author: hubu6266 <70331435+hubu6266@users.noreply.github.com>
+Date:   Thu Sep 24 17:18:02 2020 -0600
+
+    Merge branch 'master' into VanBran
+
+commit 32d200affaa9e8f881eab5e85d20fd8b90598ba5
+Merge: fc08aed c4d972a
+Author: hubu6266 <70331435+hubu6266@users.noreply.github.com>
+Date:   Thu Sep 24 17:09:15 2020 -0600
+
+    Merge pull request #4 from CSCI-3308-CU-Boulder/SimonBranch
+    
+    Completing the lab
+
+commit fc08aed797a92be2dbf53d7655eff892956d2584
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Sun Sep 20 12:23:58 2020 -0600
+
+    Add files via upload
+
+commit c4d972ad832056bee50a92617f4cc465fc1c1c02
+Author: Simon <simon@simons-MacBook-Pro.local>
+Date:   Sat Sep 19 19:10:02 2020 -0600
+
+    message
+
+commit 5289a2bf240058d4af75329c76584643bbd04749
+Author: Simon <simon@simons-MacBook-Pro.local>
+Date:   Sat Sep 19 19:08:06 2020 -0600
+
+    message
+
+commit 9d60bba26b3368904c08eba2fcad7054c56d10bd
+Author: Simon <simon@simons-MacBook-Pro.local>
+Date:   Fri Sep 18 11:13:15 2020 -0600
+
+    message
+
+commit 4c912bd8bfc7808be44b7aeb5b9be04c04ba07fb
+Author: vava3772 <vava3772@colorado.edu>
+Date:   Fri Sep 18 10:31:02 2020 -0600
+
+    update of README
+
+commit 537c6a09e16166e0accc8349e005345d11ea78e9
+Merge: 1956d3d c78c7c6
+Author: vava3772 <vava3772@colorado.edu>
+Date:   Fri Sep 18 10:26:14 2020 -0600
+
+    update of README with names
+
+commit b8750b9246a7ff8494b9d23d92c09e6802f45a1a
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Sep 18 10:06:05 2020 -0600
+
+    Update README.md
+
+commit c78c7c672c69a80e5a25b89e3d17f9f8bb84745e
+Merge: cc229eb a8c0004
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Sep 18 09:57:25 2020 -0600
+
+    Merge pull request #2 from CSCI-3308-CU-Boulder/hung_bui
+    
+    Change ReadMe.md
+
+commit a8c000445fade18e6afa83e0575b929f1b7ea5c5
+Merge: ec57b99 cc229eb
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Sep 18 09:57:10 2020 -0600
+
+    Merge branch 'master' into hung_bui
+
+commit cc229eb7c880bd9c924397a8b4a3019d002a954d
+Merge: dc05333 96c536d
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Sep 18 09:55:20 2020 -0600
+
+    Merge pull request #3 from CSCI-3308-CU-Boulder/NewBranch5
+    
+    Update README.md
+
+commit ec57b99e0fd75cc0865d671faea328bece79b255
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Sep 18 09:48:03 2020 -0600
+
+    Update ReadMe.md
+
+commit 96c536d5f5f1d86d4d2904955f739f5e4faba4c4
+Author: kusi3680 <45445645+kusi3680@users.noreply.github.com>
+Date:   Fri Sep 18 09:47:18 2020 -0600
+
+    Update README.md
+
+commit d1cf4de2896907a45b2da54e71d8a2d7ab4dbe82
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Sep 18 09:46:23 2020 -0600
+
+    Update ReadMe.md
+    
+    Reviewed by V
+
+commit e1b23f455baed888076f19bc9f9420f10111310d
+Author: vava3772 <66335300+vava3772@users.noreply.github.com>
+Date:   Fri Sep 18 09:39:50 2020 -0600
+
+    Update ReadMe.md
+    
+    Reviewed Hung Bui's changes.
+
+commit dc05333f320f3fe4d3164f987c8e32baa2fe38b0
+Author: kusi3680 <kusi3680@colorado.edu>
+Date:   Fri Sep 18 09:39:25 2020 -0600
+
+    message
+
+commit 63c13ffa9e12cc700e6871b7667146bb5cbc19c3
+Author: kusi3680 <kusi3680@colorado.edu>
+Date:   Fri Sep 18 09:36:10 2020 -0600
+
+    Added My name
+
+commit fe59f2bc117216d8fd62aeb71a6cda83767c6549
+Merge: 1956d3d 5f55b28
+Author: hubu6266 <70331435+hubu6266@users.noreply.github.com>
+Date:   Fri Sep 18 09:36:04 2020 -0600
+
+    Merge branch 'master' into VanBran
+
+commit cc77efa6a87b0272a96a5e7024fa94614f3c1bd1
+Author: hubu6266 <hubu6266@colorado.edu>
+Date:   Fri Sep 18 09:30:32 2020 -0600
+
+    Change ReadMe.md
+
+commit 1956d3dfdc6f4ea5889f315455ad76c660f7c291
+Author: vava3772 <vava3772@colorado.edu>
+Date:   Fri Sep 18 09:21:35 2020 -0600
+
+    update README
+
+commit 5f55b28adc65e0fc84a4e3e635cd2aa136b4f001
+Author: hubu6266 <hubu6266@colorado.edu>
+Date:   Fri Sep 18 09:19:16 2020 -0600
+
+    Change ReadMe.md by Hung
+
+commit 684bdfcec8378ddc68de649b6fdb8480f7c70420
+Merge: 8feeac6 55c711e
+Author: hubu6266 <hubu6266@colorado.edu>
+Date:   Fri Sep 18 09:01:20 2020 -0600
+
+    Merge branch 'master' of https://github.com/CSCI-3308-CU-Boulder/WATT2Buy
+
+commit 8feeac65bbd231118e8ee996c538af853f426a61
+Merge: 3532507 f59924a
+Author: hubu6266 <hubu6266@colorado.edu>
+Date:   Fri Sep 18 09:00:23 2020 -0600
+
+    Modified README.md (Hung)
+
+commit 55c711ee7dcb225a7ea838dae51e502ebbbebe2e
+Author: tigermcdaniel <tiger.mcdaniel@me.com>
+Date:   Fri Sep 18 08:53:17 2020 -0600
+
+    created the ReadMe.md
+
+commit 3532507ce7848356b1f7365bc6c1d8ff3fb95064
+Author: hubu6266 <hubu6266@colorado.edu>
+Date:   Fri Sep 18 08:51:10 2020 -0600
+
+    Modified README.md (Hung)
+
+commit f59924aeed86cceb617c510243177eab61008098
+Author: vava3772 <vava3772@colorado.edu>
+Date:   Fri Sep 18 08:49:31 2020 -0600
+
+    added Team Member Name Vanessa V
+
+commit 201ab7c4ca78b523c47cadda3139d26ca7ec8450
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Sun Sep 6 12:40:48 2020 -0600
+
+    updated folders
+
+commit 8997a258f7064c1dd63d230e285227ee8a6a7611
+Author: tigermcdaniel <tigermcdaniel@github.com>
+Date:   Sun Sep 6 12:30:53 2020 -0600
+
+    first commit

@@ -1,10 +1,8 @@
 "# WATT2Buy" 
 
-VanBran
 TeamName: Watt2Buy
-VanBran
 
-TeamName: Watt2Buy
+Project website:https://watt2buy.herokuapp.com/ 
 
 Project Team Members:
 
